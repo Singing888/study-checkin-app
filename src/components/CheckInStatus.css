@@ -1,0 +1,72 @@
+.checkin-card {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #6b8cff 100%);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 16px;
+}
+
+.checkin-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.checkin-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.checkin-badge {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.checkin-badge.pending {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.checkin-badge.done {
+  background: rgba(16, 185, 129, 0.9);
+}
+
+.checkin-greeting {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.checkin-detail,
+.checkin-hint {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin-top: 4px;
+}
+
+.checkin-btn {
+  width: 100%;
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: #fff;
+  color: var(--color-primary);
+  transition: transform 0.15s, opacity 0.15s;
+}
+
+.checkin-btn:not(.disabled):hover {
+  transform: translateY(-1px);
+}
+
+.checkin-btn:not(.disabled):active {
+  transform: translateY(0);
+}
+
+.checkin-btn.disabled {
+  opacity: 0.7;
+  cursor: default;
+}

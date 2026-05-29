@@ -1,0 +1,26 @@
+/* 通用卡片样式，多个区块共用 */
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 16px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.card-more {
+  font-size: 0.75rem;
+  color: var(--color-primary);
+  cursor: pointer;
+}
