@@ -12,3 +12,98 @@
     transform: translateY(0);
   }
 }
+.student-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.student-card-desc {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.student-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.student-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.student-input {
+  height: 44px;
+  border: 1px solid #dbe3ef;
+  border-radius: 12px;
+  padding: 0 14px;
+  font-size: 15px;
+  outline: none;
+}
+
+.student-input:focus {
+  border-color: #3b82f6;
+}
+
+.student-submit-btn {
+  height: 44px;
+  border: none;
+  border-radius: 12px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.student-welcome-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.student-welcome-text {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.student-welcome-subtitle {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.student-change-btn {
+  border: 1px solid #dbe3ef;
+  border-radius: 999px;
+  background: white;
+  color: #475569;
+  padding: 8px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .student-welcome-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .student-change-btn {
+    width: 100%;
+  }
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
