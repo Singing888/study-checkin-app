@@ -2,6 +2,7 @@
 node_modules
 dist
 dist-ssr
+.env
 *.local
 
 # 编辑器

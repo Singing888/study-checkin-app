@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabase'
 import './CheckInStatus.css'
 
-// 今日打卡状态卡片：显示是否已打卡，并提供打卡按钮
+// 今日专业课打卡状态卡片：显示是否已打卡，并提供打卡按钮
 function CheckInStatus({ initialCheckedIn = false, userName = '同学' }) {
   const [checkedIn, setCheckedIn] = useState(initialCheckedIn)
   const [checkInTime, setCheckInTime] = useState(null)
@@ -65,6 +65,13 @@ function CheckInStatus({ initialCheckedIn = false, userName = '同学' }) {
       .single()
 
     if (error) {
+      if (error.code === '23505') {
+        setCheckedIn(true)
+        setCheckInTime('今日已完成')
+        setSubmitting(false)
+        return
+      }
+
       console.error('打卡失败：', error)
       alert('打卡失败，请检查 Supabase 设置')
       setSubmitting(false)
@@ -93,7 +100,7 @@ function CheckInStatus({ initialCheckedIn = false, userName = '同学' }) {
   return (
     <section className="checkin-card">
       <div className="checkin-card-header">
-        <span className="checkin-label">今日是否已打卡</span>
+        <span className="checkin-label">今日专业课是否已打卡</span>
         <span className={`checkin-badge ${checkedIn ? 'done' : 'pending'}`}>
           {checkedIn ? '已打卡' : '未打卡'}
         </span>
@@ -108,7 +115,7 @@ function CheckInStatus({ initialCheckedIn = false, userName = '同学' }) {
             </p>
           </>
         ) : (
-          <p className="checkin-hint">完成今日学习后，记得来这里打卡哦</p>
+          <p className="checkin-hint">完成今日专业课背诵或复盘后，记得来这里打卡哦</p>
         )}
       </div>
 

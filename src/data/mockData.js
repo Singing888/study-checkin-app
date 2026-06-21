@@ -35,23 +35,23 @@ export const leaderboard = {
 export const latestHomework = [
   {
     id: 'h1',
-    title: '英语阅读精讲 · Unit 5',
-    course: '英语',
-    deadline: '2026-05-28 23:59',
+    title: '专业课核心概念背诵 · 第 1 章',
+    course: '专业课',
+    deadline: '2026-06-23 23:59',
     status: 'pending',
   },
   {
     id: 'h2',
-    title: '高数习题册 · 第三章定积分',
-    course: '数学',
-    deadline: '2026-05-29 18:00',
+    title: '专业课框架梳理 · 专题一',
+    course: '专业课',
+    deadline: '2026-06-25 18:00',
     status: 'pending',
   },
   {
     id: 'h3',
-    title: '政治时政热点整理',
-    course: '政治',
-    deadline: '2026-05-30 12:00',
+    title: '本周专业课背诵复盘',
+    course: '专业课',
+    deadline: '2026-06-27 12:00',
     status: 'submitted',
   },
 ]
@@ -59,15 +59,15 @@ export const latestHomework = [
 export const meetingReplays = [
   {
     id: 'm1',
-    title: '英语长难句精讲',
-    date: '2026-05-25',
+    title: '专业课导论与复习规划',
+    date: '2026-06-18',
     duration: '1小时32分',
     url: '#',
   },
   {
     id: 'm2',
-    title: '数学概率论串讲',
-    date: '2026-05-22',
+    title: '专业课核心章节串讲',
+    date: '2026-06-15',
     duration: '2小时05分',
     url: '#',
   },

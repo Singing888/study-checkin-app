@@ -11,24 +11,37 @@
 }
 
 :root {
-  --bg: #f5f7fb;
-  --card: #ffffff;
-  --primary: #4f6ef7;
-  --text: #1f2937;
-  --muted: #6b7280;
-  --border: #e5e7eb;
-  --shadow: 0 4px 12px rgba(0,0,0,0.06);
-  --radius: 16px;
+  --bg: #07111f;
+  --card: #101b2d;
+  --primary: #38bdf8;
+  --primary-strong: #22d3ee;
+  --text: #e5eefb;
+  --muted: #8ea3bd;
+  --border: rgba(148, 163, 184, 0.22);
+  --shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
+  --shadow-sm: 0 10px 26px rgba(0, 0, 0, 0.22);
+  --shadow-md: 0 18px 40px rgba(0, 0, 0, 0.34);
+  --radius: 14px;
   --max-width: 420px;
+  --color-bg: var(--bg);
+  --color-surface: var(--card);
+  --color-primary: var(--primary);
+  --color-primary-soft: rgba(56, 189, 248, 0.12);
+  --color-text: var(--text);
+  --color-text-muted: var(--muted);
+  --color-border: var(--border);
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
     "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  background: var(--bg);
+  background:
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.18), transparent 34%),
+    linear-gradient(180deg, #07111f 0%, #0a1220 48%, #050914 100%);
   color: var(--text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
 }
 
 /* =========================
@@ -58,6 +71,7 @@ body {
 
 .card {
   background: var(--card);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 16px;
@@ -76,6 +90,18 @@ button {
   font-family: inherit;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
+  border: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+textarea {
+  color: var(--color-text);
+  background: rgba(15, 23, 42, 0.72);
 }
 
 /* =========================

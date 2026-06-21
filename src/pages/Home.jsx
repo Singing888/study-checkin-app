@@ -1,6 +1,8 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import CheckInStatus from '../components/CheckInStatus'
 import Leaderboard from '../components/Leaderboard'
+import RecentCheckins from '../components/RecentCheckins'
 import HomeworkList from '../components/HomeworkList'
 import QuickLinks from '../components/QuickLinks'
 import '../components/Card.css'
@@ -47,11 +49,11 @@ function Home() {
 
           <section className="card student-card">
             <div className="card-header">
-              <h2 className="card-title">📚 考研学习打卡系统</h2>
+              <h2 className="card-title">📚 考研专业课打卡系统</h2>
             </div>
 
             <p className="student-card-desc">
-              请输入你的姓名，用于记录每日学习打卡与排行榜数据
+              请输入你的姓名，用于记录每日专业课学习打卡与排行榜数据
             </p>
 
             <form className="student-form" onSubmit={handleSubmitName}>
@@ -89,7 +91,7 @@ function Home() {
           <div>
             <p className="student-welcome-text">👋 你好，{userName}</p>
             <p className="student-welcome-subtitle">
-              今天也要稳稳推进学习，加油
+              今天也要稳稳推进专业课复习，加油
             </p>
           </div>
 
@@ -104,9 +106,14 @@ function Home() {
 
         {/* 核心功能模块 */}
         <CheckInStatus userName={userName} />
+        <RecentCheckins />
         <Leaderboard />
         <HomeworkList />
         <QuickLinks />
+
+        <Link to="/admin" className="admin-entry-link">
+          管理者查看数据
+        </Link>
 
       </div>
     </div>

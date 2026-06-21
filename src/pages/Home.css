@@ -20,7 +20,7 @@
 
 .student-card-desc {
   margin: 0;
-  color: #64748b;
+  color: var(--color-text-muted);
   font-size: 14px;
   line-height: 1.7;
 }
@@ -34,12 +34,12 @@
 .student-label {
   font-size: 14px;
   font-weight: 600;
-  color: #334155;
+  color: var(--color-text);
 }
 
 .student-input {
   height: 44px;
-  border: 1px solid #dbe3ef;
+  border: 1px solid var(--color-border);
   border-radius: 12px;
   padding: 0 14px;
   font-size: 15px;
@@ -47,15 +47,15 @@
 }
 
 .student-input:focus {
-  border-color: #3b82f6;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.12);
 }
 
 .student-submit-btn {
   height: 44px;
-  border: none;
   border-radius: 12px;
-  background: #2563eb;
-  color: white;
+  background: linear-gradient(135deg, var(--color-primary), var(--primary-strong));
+  color: #06111f;
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
@@ -72,20 +72,20 @@
   margin: 0;
   font-size: 18px;
   font-weight: 700;
-  color: #0f172a;
+  color: var(--color-text);
 }
 
 .student-welcome-subtitle {
   margin: 6px 0 0;
   font-size: 14px;
-  color: #64748b;
+  color: var(--color-text-muted);
 }
 
 .student-change-btn {
-  border: 1px solid #dbe3ef;
+  border: 1px solid var(--color-border);
   border-radius: 999px;
-  background: white;
-  color: #475569;
+  background: rgba(15, 23, 42, 0.72);
+  color: var(--color-text);
   padding: 8px 12px;
   font-size: 13px;
   cursor: pointer;
@@ -106,4 +106,12 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.admin-entry-link {
+  align-self: center;
+  margin: 4px 0 16px;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  text-decoration: underline;
 }

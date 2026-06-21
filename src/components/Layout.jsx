@@ -6,8 +6,8 @@ function Layout() {
   return (
     <div className="layout">
       <header className="layout-header">
-        <h1 className="layout-title">考研学习打卡</h1>
-        <p className="layout-subtitle">一起坚持，上岸可期</p>
+        <h1 className="layout-title">考研专业课打卡</h1>
+        <p className="layout-subtitle">背诵、复盘、周进度，一起稳步推进</p>
       </header>
 
       <main className="layout-main">

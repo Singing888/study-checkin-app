@@ -1,0 +1,240 @@
+.admin-page {
+  animation: fadeIn 0.3s ease;
+}
+
+.admin-intro {
+  margin-bottom: 14px;
+}
+
+.admin-intro h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.admin-intro p {
+  margin-top: 4px;
+  font-size: 0.85rem;
+}
+
+.admin-warning,
+.admin-error {
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.admin-warning {
+  background: rgba(251, 191, 36, 0.12);
+  color: #fde68a;
+  border: 1px solid rgba(251, 191, 36, 0.2);
+}
+
+.admin-error {
+  background: rgba(248, 113, 113, 0.12);
+  color: #fca5a5;
+  border: 1px solid rgba(248, 113, 113, 0.2);
+}
+
+.admin-loading,
+.admin-empty {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.admin-stat-card,
+.admin-section,
+.admin-progress-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.admin-stat-card {
+  padding: 12px 8px;
+  text-align: center;
+}
+
+.admin-stat-card span {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+.admin-stat-card strong {
+  display: block;
+  margin-top: 2px;
+  font-size: 1.2rem;
+  color: var(--color-primary);
+}
+
+.admin-section {
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.admin-section h3 {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.admin-list {
+  list-style: none;
+}
+
+.admin-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.85rem;
+}
+
+.admin-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.admin-list time,
+.admin-progress-head time {
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.admin-progress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-progress-card {
+  padding: 12px;
+}
+
+.admin-progress-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.85rem;
+}
+
+.admin-progress-card p {
+  margin-top: 8px;
+  font-size: 0.82rem;
+}
+
+.admin-image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.admin-image-grid a {
+  display: block;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--color-primary-soft);
+}
+
+.admin-image-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.admin-task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-task-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.82rem;
+  color: var(--color-text);
+}
+
+.admin-task-form input,
+.admin-task-form textarea {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 0.86rem;
+  outline: none;
+}
+
+.admin-task-form input:focus,
+.admin-task-form textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.12);
+}
+
+.admin-task-form button {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--color-primary), var(--primary-strong));
+  color: #06111f;
+  font-weight: 700;
+}
+
+.admin-task-form button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.admin-task-message {
+  font-size: 0.82rem;
+}
+
+.admin-task-list {
+  list-style: none;
+}
+
+.admin-task-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.admin-task-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.admin-task-list strong {
+  display: block;
+  font-size: 0.88rem;
+}
+
+.admin-task-list p {
+  margin-top: 4px;
+  font-size: 0.8rem;
+}
+
+.admin-task-list time,
+.admin-task-list span {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.74rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
